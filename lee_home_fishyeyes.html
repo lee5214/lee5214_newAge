@@ -28,18 +28,11 @@
 		</style>
 	</head>
 	<body>
-
-		<div id="container"></div>
-		<div id="info">
-			<a href="http://www.linkedin.com/in/lee5214" target="_blank">my website was destoryed due to hardware reason and unable to restore</a>
-			<h2>So Yeah! Time for my new website! Will get on air soooon!</h2>
-		</div>
-		<script src="scripts/three.min.js"></script>
-		<script src="scripts/Projector.js"></script>
-		<script src="scripts/CanvasRenderer.js"></script>
-
+	<div id="container"></div>
+		<script src="js/three.min.js"></script>
+		<script src="js/Projector.js"></script>
+		<script src="js/CanvasRenderer.js"></script>
 		<script>
-
 			var camera, scene, renderer;
 
 			var texture_placeholder,
@@ -73,12 +66,12 @@
 
 				var materials = [
 
-					loadTexture( 'textures/px.jpg' ), // right
-					loadTexture( 'textures/nx.jpg' ), // left
-					loadTexture( 'textures/py.jpg' ), // top
-					loadTexture( 'textures/ny.jpg' ), // bottom
-					loadTexture( 'textures/pz.jpg' ), // back
-					loadTexture( 'textures/nz.jpg' ) // front
+					loadTexture( 'textures/2/wheat_cube_r16_left.jpg' ), // right
+					loadTexture( 'textures/2/wheat_cube_r16_right.jpg' ), // left
+					loadTexture( 'textures/2/wheat_cube_r16_top.jpg' ), // top
+					loadTexture( 'textures/2/wheat_cube_r16_bottom.jpg' ), // bottom
+					loadTexture( 'textures/2/wheat_cube_r16_back.jpg' ), // back
+					loadTexture( 'textures/2/wheat_cube_r16_city.jpg' ) // front
 
 				];
 

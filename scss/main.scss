@@ -1,0 +1,95 @@
+body {
+  //background-color: rgb(200,200,200);
+  width:100vw;height:100vh;
+  //overflow: hidden;
+  #bg_canvas{
+    z-index: -100;
+    position:fixed;
+    z-index: -10;
+  }
+  .block{
+    width:100%;height:80%;
+    background: green;
+    opacity: 0.4;
+  }
+  #container{
+    overflow: scroll !important;
+    transform: translateZ(-1000000px);
+    z-index: 100;
+    overflow: hidden;
+    position: absolute;
+    left:0;right:0;top:0;bottom:0;
+    margin:auto;
+    width:80%; height:100%;
+    border:5px solid red;
+  }
+}
+///////////////////////
+
+/*.bgimg {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index:-1;
+  opacity:1;
+}*/
+.form-container{
+  width:50%;
+  height:10%;
+  left:0;right:0;
+  margin: 0 auto;
+  background: red;
+  input{
+    height:40%;
+    width:40%;
+    float: none;
+  }
+  button{
+    left:0;right:0;
+    margin: 0 auto;
+  }
+}
+
+.wikipedia-container {
+  float:right;
+  width:290px;
+  padding:10px;
+  margin-right: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.nytimes-container {
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+  left:0;right:0;
+  margin:0 auto;
+  width:100%;
+  .article-list {
+    position: absolute;
+    width:100%;
+    height:auto;
+    list-style-type: none;
+    left:0;right:0;
+    margin:0 auto;
+    padding:20px;
+    .article {
+      width:30%;
+      font-size:1rem;
+      border-top: 1px solid #CCC;
+      margin-bottom:10%;
+      &:first-child {
+        border-top:none;
+      }
+      a{
+        width: 100%;
+        height: 100%;
+        font-size: 3em;
+        background: white;
+      }
+    }
+  }
+}
+.snippet {
+  font-size:1.3rem;
+}
