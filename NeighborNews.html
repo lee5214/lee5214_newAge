@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lee5214</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="scss/normalize.css" rel="stylesheet">
+    <link href="scss/bootstrap.min.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="bg_canvas"></div>
+<form id="form-container" class="form-container">
+    <div>
+        <input type="text" id="street" class="input" value="" placeholder="Street">
+        <label for="street">Enter Your Street (option)</label>
+    </div>
+    <div class="input_box city_box">
+        <input type="text" id="city" class="input" value="" placeholder="City" required>
+        <label for="city">Enter Your City</label>
+        </div>
+    <button id="submit-btn" class="btn-block">Submit</button>
+</form>
+<div id="container">
+    <div class="nytimes-container">
+        <div id="nyta">
+        <h1 >Neighbor News</h1>
+        <h2>What's going on in your city?</h2>
+        </div>
+        <ul id="nytimes-articles" class="article-list" >
+            <li class="article" >
+                <a href="sad"><h2>Hey, I'm Cong. Are you tired of reading on ugly website?</h2></a>
+                <p class="snippet">input your city, then lets read some local news in a new way~</p>
+                <img src="http://www.nytimes.com/images/2016/08/07/magazine/07hill1/07mag-07hill-t_CA0-thumbWide.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <a href="http://lee5214.com" target="_blank">Cong Li present</a>
+</footer>
+
+<script src="js/three.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Projector.js"></script>
+<script src="js/CanvasRenderer.js"></script>
+<script src="js/camdraw.js"></script>
+<script src="js/nyt.js"></script>
+</body>
+</html>
