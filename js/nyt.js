@@ -11,8 +11,6 @@ function loadData() {
     $nytElem.text("");
 
     // load streetview
-
-    // YOUR CODE GOES HERE!
     var street = $('#street').val();
     var city = $('#city').val();
     var address = street+', '+city;
@@ -57,17 +55,23 @@ function loadData() {
     });
     return false;
 };
-$('#form-container').submit(loadData);
-$('.article').each(function(){
-    $(this).css({
-        "margin-left":""+Math.floor(Math.random()*60)+"%"
+
+if (loadData(true)){
+    $('.article').each(function () {
+        $(this).css({
+            "margin-left": "" + Math.floor(Math.random() * 60) + "%"
+        });
     });
-});
+}
 $("button").click(function(){
+    $('#nytimes-articles').text("");
     $('form').animate({
         "margin-top": "0px",
     });
     $("#nyta").fadeIn(2000);
+    $('#form-container').submit(loadData);
+    $("#lee").hide();
+
 })
 
 

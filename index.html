@@ -7,6 +7,15 @@
     <link href="scss/normalize.css" rel="stylesheet">
     <link href="scss/bootstrap.min.css" rel="stylesheet">
     <link href="scss/main.css" rel="stylesheet">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-81618671-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
 </head>
 <body>
@@ -20,25 +29,28 @@
         <input type="text" id="city" class="input" value="" placeholder="City" required>
         <label for="city">Enter Your City</label>
         </div>
-    <button id="submit-btn" class="btn-block">Submit</button>
+    <button id="submit-btn" class="btn-block">time for fun</button>
 </form>
 <div id="container">
     <div class="nytimes-container">
         <div id="nyta">
-        <h1 >Neighbor News</h1>
+        <h1 >City News</h1>
         <h2>What's going on in your city?</h2>
         </div>
-        <ul id="nytimes-articles" class="article-list" >
-            <li class="article" >
-                <a href="sad"><h2>Hey, I'm Cong. Are you tired of reading on ugly website?</h2></a>
-                <p class="snippet">input your city, then lets read some local news in a new way~</p>
-                <img src="http://www.nytimes.com/images/2016/08/07/magazine/07hill1/07mag-07hill-t_CA0-thumbWide.jpg">
+        <ul  class="article-list" >
+            <li class="article" id="lee">
+                <a href="http://lee5214.com"><h2>Hey, I'm Cong. Are you tired of reading on ugly websites?</h2></a>
+                <p class="snippet">This is my result of a 24 hours coding contest.</p>
+                <p class="snippet">Input desired location, drag down, read local news in a simple way~</p>
+                <img src="textures/lee.jpg">
             </li>
+        </ul>
+        <ul id="nytimes-articles" class="article-list" >
         </ul>
     </div>
 </div>
 <footer>
-    <a href="http://lee5214.com" target="_blank">Cong Li present</a>
+    <a href="http://lee5214.com" target="_blank">lee5214 present</a>
 </footer>
 
 <script src="js/three.min.js"></script>

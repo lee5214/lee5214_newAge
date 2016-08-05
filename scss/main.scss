@@ -40,8 +40,6 @@ body {
 
 ///////////////////////
 form {
-  transition: 1s ease;
-  transfomr: skew(20deg);
   z-index: 20;
   position: fixed;
   width: 30%;
@@ -52,7 +50,12 @@ form {
     position: relative;
   }
   input, textarea {
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
     transform: skew(-30deg);
+    height:20%;
     width: 100%;
     border: 10px solid rgba(12, 32, 34, 0.5);
     background: none;
@@ -83,8 +86,31 @@ form {
     width: 100%;
     margin-right: -100%;
     bottom: 2px;
-    transition: // not padding
-            background 1s,
+    -webkit-transition: background 1s,
+            color 1s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.5s,
+            left 1s;
+    -moz-transition: background 1s,
+            color 1s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.5s,
+            left 1s;
+    -ms-transition: background 1s,
+            color 1s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.5s,
+            left 1s;
+    -o-transition: background 1s,
+            color 1s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.5s,
+            left 1s;
+    transition: background 1s,
             color 1s,
             top 0.2s,
             bottom 0.2s,
@@ -105,19 +131,21 @@ form {
     padding-top: 5px;
   }
   button{
-    visibility: hidden;
+    //visibility: hidden;
     height:20%;
-    width:50%;
-    &:before{
-      font-size:2.2em;
-      visibility: visible;
-      content: "Go find your local news!";
-      font-weight:600;
-      color: rgba(255,255,255,0.8);
-      border: 3px solid rgba(12, 232, 234, 1);
-      background: transparent;
-      padding:10px;
-    }
+    width:100%;
+    background: red;
+    position: absolute;
+    left:0;right:0;
+    margin:auto;
+    font-size:2.2em;
+    visibility: visible;
+    font-weight:600;
+    color: rgba(255,255,255,0.8);
+    border: 3px solid rgba(12, 232, 234, 1);
+    background: transparent;
+    padding:10px;
+    text-align:center;
   }
 }
 ///////////////////////////////////
@@ -226,5 +254,22 @@ footer{
     text-decoration: none;
     list-style-type:none;
 
+  }
+}
+
+#lee{
+  z-index: 1000;
+  position: absolute;
+  height:20%;width:50%;
+  margin-bottom:-14%;/*left:0;right:0;
+  margin:auto;
+  margin-bottom: 0px;*/
+  align:center;
+  a,p{
+    width:50%;
+  }
+  img{
+    position:absolute;
+    float: right;
   }
 }
