@@ -20,7 +20,7 @@ function loadData() {
     console.log(street+"    "+city);
     var NYTurl = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     NYTurl += '?' + $.param({
-            'api-key': "9aff8c97ee85495baca98ab56d506ebd",
+            'api-key': "7b3752510c8d426d9182b1beb2f507e3",
             'fq': address
         });
     $.ajax({
